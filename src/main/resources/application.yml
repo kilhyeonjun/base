@@ -3,8 +3,12 @@ spring:
   profiles:
     active: "local"
   datasource:
-    url: jdbc:mysql://localhost:3306?serverTimezone=UTC&characterEncoding=UTF-8
+    url: jdbc:mysql://localhost:3306/base?serverTimezone=UTC&characterEncoding=UTF-8
     username: root
     password:
     dbcp2:
       driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  type-aliases-package: com.otrodevym.spring
+  mapper-locations: mybatis/mapper/**/*.xml
