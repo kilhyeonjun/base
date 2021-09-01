@@ -1,4 +1,4 @@
-package com.hjkill.spring.base.common;
+package com.hjkill.spring.base.common.mybatis;
 
 
 import java.util.List;

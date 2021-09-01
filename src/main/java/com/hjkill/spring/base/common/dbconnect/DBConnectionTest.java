@@ -1,4 +1,4 @@
-package com.hjkill.spring.base.common;
+package com.hjkill.spring.base.common.dbconnect;
 
 import java.sql.*;
 

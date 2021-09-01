@@ -1,4 +1,4 @@
-package com.hjkill.spring.base.common;
+package com.hjkill.spring.base.common.mybatis;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
