@@ -4,11 +4,21 @@ spring:
     active: "local"
   datasource:
     url: jdbc:mysql://localhost:3306/base?serverTimezone=UTC&characterEncoding=UTF-8
-    username: root
-    password:
+    username: test
+    password: 1234
     dbcp2:
       driver-class-name: com.mysql.cj.jdbc.Driver
+  # API 호출시, SQL 문을 콘솔에 출력
+  jpa:
+    show-sql: true
+    # DDL 정의시 데이터베이스의 고유 기능을 사용
+    generate-ddl: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
 
 mybatis:
   type-aliases-package: com.otrodevym.spring
   mapper-locations: mybatis/mapper/**/*.xml
+
+
