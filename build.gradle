@@ -33,6 +33,7 @@ dependencies {
     // https://mvnrepository.com/artifact/com.spring4all/swagger-spring-boot-starter
     // implementation group: 'com.spring4all', name: 'swagger-spring-boot-starter', version: '1.9.1.RELEASE'
     implementation "io.springfox:springfox-boot-starter:3.0.0"
+    implementation 'org.liquibase:liquibase-core:4.4.3'
 }
 
 test {
